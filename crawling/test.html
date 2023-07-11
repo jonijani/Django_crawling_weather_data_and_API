@@ -1,0 +1,64 @@
+<table class="table table-condensed">
+    <thead id="dh">
+        <tr style="height: 45px">
+            <th class="lead" title="Date weather forecast is for">Date</th>
+            <th class="lead" title="Predominant weather conditions">Weather</th>
+            <th class="lead" title="Temperature °C">Temp</th>
+            <th class="lead" title="Wind direction">Wind</th>
+            <th class="hidden-xs lead" title="Average Wind speed">Speed</th>
+            <th class="hidden-xs lead" title="Wind gust speed">Gust</th>
+            <th class="hidden-xs lead" title="Humidity %">Humidity</th>
+            <th class="hidden-xs lead" title="Surface pressure mB">Pressure</th>
+            <th class="hidden-xs lead" title="Daily rain total">Rain total</th>
+        </tr>
+    </thead>
+    <tbody id="df">
+
+        
+
+      
+    '
+        <tr>
+            <td colspan="4" class="text-left">
+                <button id="full-summary" type="button" class="btn btn-warning hidden-sm hidden-md hidden-lg">
+                    <i class="glyphicon glyphicon-resize-horizontal"></i></button>
+                <a id="hl_three_day" class="btn btn-success"
+                    href="//www.theweatheroutlook.com/twoforecasts/hourly-weather-forecast.aspx?loc=london">Hourly</a>
+                <span id="f16dp11"><a disabled="disabled" class="btn btn-warning">Day 0 - 7</a>&nbsp;<a
+                        class="btn btn-warning"
+                        href="javascript:__doPostBack('ctl00$cpBodyMain$lvMaster$f16dp11$ctl00$ctl01','')">8 -
+                        16</a>&nbsp;</span>
+            </td>
+            <td class="hidden-xs" id="units-wrapper" colspan="5">
+
+
+                <div id="units" class="smbuttonsul">
+                    <div role="toolbar" class="btn-toolbar">
+
+                        <div data-toggle="buttons" class="btn-group">
+
+                            <label class="btn btn-default active" id="wuts_wmph">
+                                mph
+                            </label>
+                            <label class="btn btn-default" id="wuts_wkph">
+                                kph
+                            </label>
+                            <label class="btn btn-default" id="wuts_wkts">
+                                kts
+                            </label>
+                            <label class="btn btn-default active" id="tuts_tc">
+                                °C
+                            </label>
+                            <label class="btn btn-default" id="tuts_tf">
+                                °F
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </td>
+        </tr>
+    </tfoot>
+</table>
