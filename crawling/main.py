@@ -6,6 +6,12 @@ import json
 # "https://www.theweatheroutlook.com/forecast/uk/london"
 BASE_URL = "https://www.theweatheroutlook.com/forecast/uk/"
 
+# need to to import pydantic and Optional
+class CardData(BaseModel):  # pydantic model
+    date: None
+    month: None
+    temperature: None
+    
 
 def get_resp(url):
     res = requests.get(url)
@@ -75,8 +81,7 @@ if __name__ == "__main__":
     # )  # we get bs4 object from response text (html)
     # table = soup.find("table", class_="table table-condensed")
    
-    print(get_weather_for_city_searched('london'))
-
+    print(get_weather_for_city_searched('dublin'))
 
 
 
