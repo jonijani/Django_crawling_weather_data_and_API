@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import json
 
 # "https://www.theweatheroutlook.com/forecast/uk/london"
 BASE_URL = "https://www.theweatheroutlook.com/forecast/uk/"
@@ -78,3 +79,10 @@ if __name__ == "__main__":
     #print(add_dict_to_list(url))
     #print(make_url('leeds'))
     print(get_weather_for_city_searched('london'))
+
+
+
+
+
+
+
