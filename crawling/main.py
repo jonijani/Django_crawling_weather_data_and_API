@@ -74,10 +74,7 @@ if __name__ == "__main__":
     #     res.text, "html.parser"
     # )  # we get bs4 object from response text (html)
     # table = soup.find("table", class_="table table-condensed")
-
-    # print(make_dict(table))
-    #print(add_dict_to_list(url))
-    #print(make_url('leeds'))
+   
     print(get_weather_for_city_searched('london'))
 
 
