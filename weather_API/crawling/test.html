@@ -1,0 +1,744 @@
+<table class="table table-condensed">
+    <thead id="dh">
+        <tr style="height: 45px">
+            <th class="lead" title="Date weather forecast is for">Date</th>
+            <th class="lead" title="Predominant weather conditions">Weather</th>
+            <th class="lead" title="Temperature °C">Temp</th>
+            <th class="lead" title="Wind direction">Wind</th>
+            <th class="hidden-xs lead" title="Average Wind speed">Speed</th>
+            <th class="hidden-xs lead" title="Wind gust speed">Gust</th>
+            <th class="hidden-xs lead" title="Humidity %">Humidity</th>
+            <th class="hidden-xs lead" title="Surface pressure mB">Pressure</th>
+            <th class="hidden-xs lead" title="Daily rain total">Rain total</th>
+        </tr>
+    </thead>
+    <tbody id="df">
+
+        <tr id="tr2">
+            <td>Tue 11
+                <span class="hidden-xs">Jul</span>
+                <a id="2" href="javascript:;">
+                    <div class="shows">Show details</div>
+                </a>
+            </td>
+            <td>
+                <img id="im4" src="../../Images/icons/cloudy.gif" alt="Weather"
+                    style="height:30px;width:45px;border-width:0px;" class="initial loading img-responsive"
+                    data-was-processed="true">
+            </td>
+            <td>
+                <span class="temps">
+                    22°C</span>
+            </td>
+            <td>
+                <img id="im5" src="../../Images/icons/southwest1.gif" alt="Wind direction"
+                    style="height:22px;width:22px;border-width:0px;" class="initial loading img-responsive"
+                    data-was-processed="true">
+                <span class="visible-xs xs-wind">12mph</span>
+            </td>
+            <td class="hidden-xs">
+                <span class="winds">
+                    12mph</span>
+            </td>
+            <td class="hidden-xs">
+                <span class="winds">
+                    20mph</span>
+            </td>
+            <td class="hidden-xs">
+                51%
+            </td>
+            <td class="hidden-xs">
+                1010mB
+            </td>
+            <td class="hidden-xs" id="rt2">
+                1.5 mm
+            </td>
+        </tr>
+        <tr style="display: none" id="trd2">
+            <td colspan="9"></td>
+        </tr>
+        <tr style="display: none;" id="trd22">
+            <td colspan="9" style="background-color: rgb(204, 204, 204);">
+                <div class="overflow-horiz-wrapper">
+                    Sun: <span>▲04:57</span><img class="img-responsive-inline-block img-responsive"
+                        style="width: 26px; height: 26px; vertical-align:middle;"
+                        src="https://www.theweatheroutlook.com/images/icons/clear.svg"><span>▼21:16 &nbsp;&nbsp;Moon:
+                        <span>▲00:40</span><img class="img-responsive-inline-block img-responsive"
+                            alt="Moon waning crescent" style="width: 26px; height: 26px; vertical-align:middle;"
+                            src="https://www.theweatheroutlook.com/images/icons/moon-waning-crescent.svg"><span>▼15:21</span>
+                        <div id="gfs-ov-ch1" class="bottom-buffer top-buffer more-info-1"><span
+                                style="color:#007bff;cursor:pointer" onclick="javascript:showMore(1)">Show GFS
+                                charts</span></div>
+                        <div id="d-1" class="hidden bottom-buffer top-buffer row">
+                            <div style="cursor:pointer" class="col-xs-12 top-buffer">Select hour: <span
+                                    onclick="showMore(1,-15)">0</span> - <span onclick="showMore(1,-12)">3</span> -
+                                <span onclick="showMore(1,-9)">6</span> - <span onclick="showMore(1,-6)">9</span> -
+                                <span onclick="showMore(1,-3)">12</span> - <span onclick="showMore(1,0)">15</span> -
+                                <span onclick="showMore(1,3)">18</span> - <span onclick="showMore(1,6)">21</span></div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="400" height="325"
+                                    id="eurmslp-d1" src="" class="img-responsive"><label>Surface pressure and
+                                    precip</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="400" height="325"
+                                    id="mslp-d1" src="" class="img-responsive"><label>Air mass temperatures</label>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="350" height="400"
+                                    id="uk2mtmx-d1" src="" class="img-responsive"><label>Max temps</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="350" height="400"
+                                    id="ukwg-d1" src="" class="img-responsive"><label>Wind gusts</label></div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="350" height="363"
+                                    id="ukdp-d1" src="" class="img-responsive"><label>Dew point</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="350" height="363"
+                                    id="ukcp-d1" src="" class="img-responsive"><label>Storm risk</label></div>
+                            <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 top-buffer"><span
+                                    style="color:#007bff;cursor:pointer"
+                                    onclick="location.href ='https://www.theweatheroutlook.com/twodata/gfs.aspx'">GFS
+                                    chart viewer</span></div>
+                        </div>
+                    </span></div>
+            </td>
+        </tr>
+
+        <tr id="tr3">
+            <td>Wed 12
+                <span class="hidden-xs">Jul</span>
+                <a id="3" href="javascript:;">
+                    <div class="shows">Show details</div>
+                </a>
+            </td>
+            <td>
+                <img id="im4" src="../../Images/icons/mostcloud.gif" alt="Weather"
+                    style="height:30px;width:45px;border-width:0px;" class="initial loading img-responsive"
+                    data-was-processed="true">
+            </td>
+            <td>
+                <span class="temps">
+                    21°C</span>
+            </td>
+            <td>
+                <img id="im5" src="../../Images/icons/west1.gif" alt="Wind direction"
+                    style="height:22px;width:22px;border-width:0px;" class="initial loading img-responsive"
+                    data-was-processed="true">
+                <span class="visible-xs xs-wind">14mph</span>
+            </td>
+            <td class="hidden-xs">
+                <span class="winds">
+                    14mph</span>
+            </td>
+            <td class="hidden-xs">
+                <span class="winds">
+                    21mph</span>
+            </td>
+            <td class="hidden-xs">
+                51%
+            </td>
+            <td class="hidden-xs">
+                1011mB
+            </td>
+            <td class="hidden-xs" id="rt3">
+                1.2 mm
+            </td>
+        </tr>
+        <tr style="display: none" id="trd3">
+            <td colspan="9"></td>
+        </tr>
+        <tr style="display: none;" id="trd23">
+            <td colspan="9" style="background-color: rgb(204, 204, 204);">
+                <div class="overflow-horiz-wrapper">
+                    Sun: <span>▲04:58</span><img class="img-responsive-inline-block img-responsive"
+                        style="width: 26px; height: 26px; vertical-align:middle;"
+                        src="https://www.theweatheroutlook.com/images/icons/clear.svg"><span>▼21:15 &nbsp;&nbsp;Moon:
+                        <span>▲00:55</span><img class="img-responsive-inline-block img-responsive"
+                            alt="Moon waning crescent" style="width: 26px; height: 26px; vertical-align:middle;"
+                            src="https://www.theweatheroutlook.com/images/icons/moon-waning-crescent.svg"><span>▼16:41</span>
+                        <div id="gfs-ov-ch2" class="bottom-buffer top-buffer more-info-2"><span
+                                style="color:#007bff;cursor:pointer" onclick="javascript:showMore(2)">Show GFS
+                                charts</span></div>
+                        <div id="d-2" class="hidden bottom-buffer top-buffer row">
+                            <div style="cursor:pointer" class="col-xs-12 top-buffer">Select hour: <span
+                                    onclick="showMore(2,-15)">0</span> - <span onclick="showMore(2,-12)">3</span> -
+                                <span onclick="showMore(2,-9)">6</span> - <span onclick="showMore(2,-6)">9</span> -
+                                <span onclick="showMore(2,-3)">12</span> - <span onclick="showMore(2,0)">15</span> -
+                                <span onclick="showMore(2,3)">18</span> - <span onclick="showMore(2,6)">21</span></div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="400" height="325"
+                                    id="eurmslp-d2" src="" class="img-responsive"><label>Surface pressure and
+                                    precip</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="400" height="325"
+                                    id="mslp-d2" src="" class="img-responsive"><label>Air mass temperatures</label>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="350" height="400"
+                                    id="uk2mtmx-d2" src="" class="img-responsive"><label>Max temps</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="350" height="400"
+                                    id="ukwg-d2" src="" class="img-responsive"><label>Wind gusts</label></div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="350" height="363"
+                                    id="ukdp-d2" src="" class="img-responsive"><label>Dew point</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="350" height="363"
+                                    id="ukcp-d2" src="" class="img-responsive"><label>Storm risk</label></div>
+                            <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 top-buffer"><span
+                                    style="color:#007bff;cursor:pointer"
+                                    onclick="location.href ='https://www.theweatheroutlook.com/twodata/gfs.aspx'">GFS
+                                    chart viewer</span></div>
+                        </div>
+                    </span></div>
+            </td>
+        </tr>
+
+        <tr id="tr4">
+            <td>Thu 13
+                <span class="hidden-xs">Jul</span>
+                <a id="4" href="javascript:;">
+                    <div class="shows">Show details</div>
+                </a>
+            </td>
+            <td>
+                <img id="im4" src="../../Images/icons/cloudy.gif" alt="Weather"
+                    style="height:30px;width:45px;border-width:0px;" class="initial loading img-responsive"
+                    data-was-processed="true">
+            </td>
+            <td>
+                <span class="temps">
+                    23°C</span>
+            </td>
+            <td>
+                <img id="im5" src="../../Images/icons/west1.gif" alt="Wind direction"
+                    style="height:22px;width:22px;border-width:0px;" class="initial loading img-responsive"
+                    data-was-processed="true">
+                <span class="visible-xs xs-wind">11mph</span>
+            </td>
+            <td class="hidden-xs">
+                <span class="winds">
+                    11mph</span>
+            </td>
+            <td class="hidden-xs">
+                <span class="winds">
+                    17mph</span>
+            </td>
+            <td class="hidden-xs">
+                40%
+            </td>
+            <td class="hidden-xs">
+                1015mB
+            </td>
+            <td class="hidden-xs" id="rt4">
+                0 mm
+            </td>
+        </tr>
+        <tr style="display: none" id="trd4">
+            <td colspan="9"></td>
+        </tr>
+        <tr style="display: none;" id="trd24">
+            <td colspan="9" style="background-color: rgb(204, 204, 204);">
+                <div class="overflow-horiz-wrapper">
+                    Sun: <span>▲05:00</span><img class="img-responsive-inline-block img-responsive"
+                        style="width: 26px; height: 26px; vertical-align:middle;"
+                        src="https://www.theweatheroutlook.com/images/icons/clear.svg"><span>▼21:15 &nbsp;&nbsp;Moon:
+                        <span>▲01:14</span><img class="img-responsive-inline-block img-responsive"
+                            alt="Moon waning crescent" style="width: 26px; height: 26px; vertical-align:middle;"
+                            src="https://www.theweatheroutlook.com/images/icons/moon-waning-crescent.svg"><span>▼17:59</span>
+                        <div id="gfs-ov-ch3" class="bottom-buffer top-buffer more-info-3"><span
+                                style="color:#007bff;cursor:pointer" onclick="javascript:showMore(3)">Show GFS
+                                charts</span></div>
+                        <div id="d-3" class="hidden bottom-buffer top-buffer row">
+                            <div style="cursor:pointer" class="col-xs-12 top-buffer">Select hour: <span
+                                    onclick="showMore(3,-15)">0</span> - <span onclick="showMore(3,-12)">3</span> -
+                                <span onclick="showMore(3,-9)">6</span> - <span onclick="showMore(3,-6)">9</span> -
+                                <span onclick="showMore(3,-3)">12</span> - <span onclick="showMore(3,0)">15</span> -
+                                <span onclick="showMore(3,3)">18</span> - <span onclick="showMore(3,6)">21</span></div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="400" height="325"
+                                    id="eurmslp-d3" src="" class="img-responsive"><label>Surface pressure and
+                                    precip</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="400" height="325"
+                                    id="mslp-d3" src="" class="img-responsive"><label>Air mass temperatures</label>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="350" height="400"
+                                    id="uk2mtmx-d3" src="" class="img-responsive"><label>Max temps</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="350" height="400"
+                                    id="ukwg-d3" src="" class="img-responsive"><label>Wind gusts</label></div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="350" height="363"
+                                    id="ukdp-d3" src="" class="img-responsive"><label>Dew point</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="350" height="363"
+                                    id="ukcp-d3" src="" class="img-responsive"><label>Storm risk</label></div>
+                            <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 top-buffer"><span
+                                    style="color:#007bff;cursor:pointer"
+                                    onclick="location.href ='https://www.theweatheroutlook.com/twodata/gfs.aspx'">GFS
+                                    chart viewer</span></div>
+                        </div>
+                    </span></div>
+            </td>
+        </tr>
+
+        <tr id="tr5">
+            <td>Fri 14
+                <span class="hidden-xs">Jul</span>
+                <a id="5" href="javascript:;">
+                    <div class="shows">Show details</div>
+                </a>
+            </td>
+            <td>
+                <img id="im4" src="../../Images/icons/mostcloud.gif" alt="Weather"
+                    style="height:30px;width:45px;border-width:0px;" class="initial loading img-responsive"
+                    data-was-processed="true">
+            </td>
+            <td>
+                <span class="temps">
+                    22°C</span>
+            </td>
+            <td>
+                <img id="im5" src="../../Images/icons/southwest1.gif" alt="Wind direction"
+                    style="height:22px;width:22px;border-width:0px;" class="initial loading img-responsive"
+                    data-was-processed="true">
+                <span class="visible-xs xs-wind">9mph</span>
+            </td>
+            <td class="hidden-xs">
+                <span class="winds">
+                    9mph</span>
+            </td>
+            <td class="hidden-xs">
+                <span class="winds">
+                    15mph</span>
+            </td>
+            <td class="hidden-xs">
+                44%
+            </td>
+            <td class="hidden-xs">
+                1014mB
+            </td>
+            <td class="hidden-xs" id="rt5">
+                0 mm
+            </td>
+        </tr>
+        <tr style="display: none" id="trd5">
+            <td colspan="9"></td>
+        </tr>
+        <tr style="display: none;" id="trd25">
+            <td colspan="9" style="background-color: rgb(204, 204, 204);">
+                <div class="overflow-horiz-wrapper">
+                    Sun: <span>▲05:01</span><img class="img-responsive-inline-block img-responsive"
+                        style="width: 26px; height: 26px; vertical-align:middle;"
+                        src="https://www.theweatheroutlook.com/images/icons/clear.svg"><span>▼21:14 &nbsp;&nbsp;Moon:
+                        <span>▲01:40</span><img class="img-responsive-inline-block img-responsive"
+                            alt="Moon waning crescent" style="width: 26px; height: 26px; vertical-align:middle;"
+                            src="https://www.theweatheroutlook.com/images/icons/moon-waning-crescent.svg"><span>▼19:12</span>
+                        <div id="gfs-ov-ch4" class="bottom-buffer top-buffer more-info-4"><span
+                                style="color:#007bff;cursor:pointer" onclick="javascript:showMore(4)">Show GFS
+                                charts</span></div>
+                        <div id="d-4" class="hidden bottom-buffer top-buffer row">
+                            <div style="cursor:pointer" class="col-xs-12 top-buffer">Select hour: <span
+                                    onclick="showMore(4,-15)">0</span> - <span onclick="showMore(4,-12)">3</span> -
+                                <span onclick="showMore(4,-9)">6</span> - <span onclick="showMore(4,-6)">9</span> -
+                                <span onclick="showMore(4,-3)">12</span> - <span onclick="showMore(4,0)">15</span> -
+                                <span onclick="showMore(4,3)">18</span> - <span onclick="showMore(4,6)">21</span></div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="400" height="325"
+                                    id="eurmslp-d4" src="" class="img-responsive"><label>Surface pressure and
+                                    precip</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="400" height="325"
+                                    id="mslp-d4" src="" class="img-responsive"><label>Air mass temperatures</label>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="350" height="400"
+                                    id="uk2mtmx-d4" src="" class="img-responsive"><label>Max temps</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="350" height="400"
+                                    id="ukwg-d4" src="" class="img-responsive"><label>Wind gusts</label></div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="350" height="363"
+                                    id="ukdp-d4" src="" class="img-responsive"><label>Dew point</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="350" height="363"
+                                    id="ukcp-d4" src="" class="img-responsive"><label>Storm risk</label></div>
+                            <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 top-buffer"><span
+                                    style="color:#007bff;cursor:pointer"
+                                    onclick="location.href ='https://www.theweatheroutlook.com/twodata/gfs.aspx'">GFS
+                                    chart viewer</span></div>
+                        </div>
+                    </span></div>
+            </td>
+        </tr>
+
+        <tr id="tr6">
+            <td>Sat 15
+                <span class="hidden-xs">Jul</span>
+                <a id="6" href="javascript:;">
+                    <div class="shows">Show details</div>
+                </a>
+            </td>
+            <td>
+                <img id="im4" src="../../Images/icons/mostcloud.gif" alt="Weather"
+                    style="height:30px;width:45px;border-width:0px;" class="initial loading img-responsive"
+                    data-was-processed="true">
+            </td>
+            <td>
+                <span class="temps">
+                    23°C</span>
+            </td>
+            <td>
+                <img id="im5" src="../../Images/icons/southwest1.gif" alt="Wind direction"
+                    style="height:22px;width:22px;border-width:0px;" class="initial loading img-responsive"
+                    data-was-processed="true">
+                <span class="visible-xs xs-wind">16mph</span>
+            </td>
+            <td class="hidden-xs">
+                <span class="winds">
+                    16mph</span>
+            </td>
+            <td class="hidden-xs">
+                <span class="winds">
+                    25mph</span>
+            </td>
+            <td class="hidden-xs">
+                39%
+            </td>
+            <td class="hidden-xs">
+                1002mB
+            </td>
+            <td class="hidden-xs" id="rt6">
+                1.8 mm
+            </td>
+        </tr>
+        <tr style="display: none" id="trd6">
+            <td colspan="9"></td>
+        </tr>
+        <tr style="display: none;" id="trd26">
+            <td colspan="9" style="background-color: rgb(204, 204, 204);">
+                <div class="overflow-horiz-wrapper">
+                    Sun: <span>▲05:02</span><img class="img-responsive-inline-block img-responsive"
+                        style="width: 26px; height: 26px; vertical-align:middle;"
+                        src="https://www.theweatheroutlook.com/images/icons/clear.svg"><span>▼21:13 &nbsp;&nbsp;Moon:
+                        <span>▲02:15</span><img class="img-responsive-inline-block img-responsive"
+                            alt="Moon waning crescent" style="width: 26px; height: 26px; vertical-align:middle;"
+                            src="https://www.theweatheroutlook.com/images/icons/moon-waning-crescent.svg"><span>▼20:16</span>
+                        <div id="gfs-ov-ch5" class="bottom-buffer top-buffer more-info-5"><span
+                                style="color:#007bff;cursor:pointer" onclick="javascript:showMore(5)">Show GFS
+                                charts</span></div>
+                        <div id="d-5" class="hidden bottom-buffer top-buffer row">
+                            <div style="cursor:pointer" class="col-xs-12 top-buffer">Select hour: <span
+                                    onclick="showMore(5,-15)">0</span> - <span onclick="showMore(5,-12)">3</span> -
+                                <span onclick="showMore(5,-9)">6</span> - <span onclick="showMore(5,-6)">9</span> -
+                                <span onclick="showMore(5,-3)">12</span> - <span onclick="showMore(5,0)">15</span> -
+                                <span onclick="showMore(5,3)">18</span> - <span onclick="showMore(5,6)">21</span></div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="400" height="325"
+                                    id="eurmslp-d5" src="" class="img-responsive"><label>Surface pressure and
+                                    precip</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="400" height="325"
+                                    id="mslp-d5" src="" class="img-responsive"><label>Air mass temperatures</label>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="350" height="400"
+                                    id="uk2mtmx-d5" src="" class="img-responsive"><label>Max temps</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="350" height="400"
+                                    id="ukwg-d5" src="" class="img-responsive"><label>Wind gusts</label></div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="350" height="363"
+                                    id="ukdp-d5" src="" class="img-responsive"><label>Dew point</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="350" height="363"
+                                    id="ukcp-d5" src="" class="img-responsive"><label>Storm risk</label></div>
+                            <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 top-buffer"><span
+                                    style="color:#007bff;cursor:pointer"
+                                    onclick="location.href ='https://www.theweatheroutlook.com/twodata/gfs.aspx'">GFS
+                                    chart viewer</span></div>
+                        </div>
+                    </span></div>
+            </td>
+        </tr>
+
+        <tr id="tr7">
+            <td>Sun 16
+                <span class="hidden-xs">Jul</span>
+                <a id="7" href="javascript:;">
+                    <div class="shows">Show details</div>
+                </a>
+            </td>
+            <td>
+                <img id="im4" src="../../Images/icons/lightrain.gif" alt="Weather"
+                    style="height:30px;width:45px;border-width:0px;" class="initial loading img-responsive"
+                    data-was-processed="true">
+            </td>
+            <td>
+                <span class="temps">
+                    21°C</span>
+            </td>
+            <td>
+                <img id="im5" src="../../Images/icons/southwest1.gif" alt="Wind direction"
+                    style="height:22px;width:22px;border-width:0px;" class="initial loading img-responsive"
+                    data-was-processed="true">
+                <span class="visible-xs xs-wind">15mph</span>
+            </td>
+            <td class="hidden-xs">
+                <span class="winds">
+                    15mph</span>
+            </td>
+            <td class="hidden-xs">
+                <span class="winds">
+                    26mph</span>
+            </td>
+            <td class="hidden-xs">
+                40%
+            </td>
+            <td class="hidden-xs">
+                1008mB
+            </td>
+            <td class="hidden-xs" id="rt7">
+                0.9 mm
+            </td>
+        </tr>
+        <tr style="display: none" id="trd7">
+            <td colspan="9"></td>
+        </tr>
+        <tr style="display: none;" id="trd27">
+            <td colspan="9" style="background-color: rgb(204, 204, 204);">
+                <div class="overflow-horiz-wrapper">
+                    Sun: <span>▲05:03</span><img class="img-responsive-inline-block img-responsive"
+                        style="width: 26px; height: 26px; vertical-align:middle;"
+                        src="https://www.theweatheroutlook.com/images/icons/clear.svg"><span>▼21:12 &nbsp;&nbsp;Moon:
+                        <span>▲03:01</span><img class="img-responsive-inline-block img-responsive"
+                            alt="Moon waning crescent" style="width: 26px; height: 26px; vertical-align:middle;"
+                            src="https://www.theweatheroutlook.com/images/icons/moon-waning-crescent.svg"><span>▼21:06</span>
+                        <div id="gfs-ov-ch6" class="bottom-buffer top-buffer more-info-6"><span
+                                style="color:#007bff;cursor:pointer" onclick="javascript:showMore(6)">Show GFS
+                                charts</span></div>
+                        <div id="d-6" class="hidden bottom-buffer top-buffer row">
+                            <div style="cursor:pointer" class="col-xs-12 top-buffer">Select hour: <span
+                                    onclick="showMore(6,-15)">0</span> - <span onclick="showMore(6,-12)">3</span> -
+                                <span onclick="showMore(6,-9)">6</span> - <span onclick="showMore(6,-6)">9</span> -
+                                <span onclick="showMore(6,-3)">12</span> - <span onclick="showMore(6,0)">15</span> -
+                                <span onclick="showMore(6,3)">18</span> - <span onclick="showMore(6,6)">21</span></div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="400" height="325"
+                                    id="eurmslp-d6" src="" class="img-responsive"><label>Surface pressure and
+                                    precip</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="400" height="325"
+                                    id="mslp-d6" src="" class="img-responsive"><label>Air mass temperatures</label>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="350" height="400"
+                                    id="uk2mtmx-d6" src="" class="img-responsive"><label>Max temps</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="350" height="400"
+                                    id="ukwg-d6" src="" class="img-responsive"><label>Wind gusts</label></div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="350" height="363"
+                                    id="ukdp-d6" src="" class="img-responsive"><label>Dew point</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="350" height="363"
+                                    id="ukcp-d6" src="" class="img-responsive"><label>Storm risk</label></div>
+                            <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 top-buffer"><span
+                                    style="color:#007bff;cursor:pointer"
+                                    onclick="location.href ='https://www.theweatheroutlook.com/twodata/gfs.aspx'">GFS
+                                    chart viewer</span></div>
+                        </div>
+                    </span></div>
+            </td>
+        </tr>
+
+        <tr id="tr8">
+            <td>Mon 17
+                <span class="hidden-xs">Jul</span>
+                <a id="8" href="javascript:;">
+                    <div class="shows">Show details</div>
+                </a>
+            </td>
+            <td>
+                <img id="im4" src="../../Images/icons/sunnyspell.gif" alt="Weather"
+                    style="height:30px;width:45px;border-width:0px;" class="initial img-responsive loaded"
+                    data-was-processed="true">
+            </td>
+            <td>
+                <span class="temps">
+                    22°C</span>
+            </td>
+            <td>
+                <img id="im5" src="../../Images/icons/west1.gif" alt="Wind direction"
+                    style="height:22px;width:22px;border-width:0px;" class="initial loading img-responsive"
+                    data-was-processed="true">
+                <span class="visible-xs xs-wind">12mph</span>
+            </td>
+            <td class="hidden-xs">
+                <span class="winds">
+                    12mph</span>
+            </td>
+            <td class="hidden-xs">
+                <span class="winds">
+                    17mph</span>
+            </td>
+            <td class="hidden-xs">
+                36%
+            </td>
+            <td class="hidden-xs">
+                1013mB
+            </td>
+            <td class="hidden-xs" id="rt8">
+                0.3 mm
+            </td>
+        </tr>
+        <tr style="display: none" id="trd8">
+            <td colspan="9"></td>
+        </tr>
+        <tr style="display: none;" id="trd28">
+            <td colspan="9" style="background-color: rgb(204, 204, 204);">
+                <div class="overflow-horiz-wrapper">
+                    Sun: <span>▲05:04</span><img class="img-responsive-inline-block img-responsive"
+                        style="width: 26px; height: 26px; vertical-align:middle;"
+                        src="https://www.theweatheroutlook.com/images/icons/clear.svg"><span>▼21:11
+                        &nbsp;&nbsp;&nbsp;Moon: <span>▲03:59</span><img
+                            class="img-responsive-inline-block img-responsive" alt="New moon"
+                            style="width: 26px; height: 26px; vertical-align:middle;"
+                            src="https://www.theweatheroutlook.com/images/icons/moon-new.svg"><span>▼21:43</span>
+                        <div id="gfs-ov-ch7" class="bottom-buffer top-buffer more-info-7"><span
+                                style="color:#007bff;cursor:pointer" onclick="javascript:showMore(7)">Show GFS
+                                charts</span></div>
+                        <div id="d-7" class="hidden bottom-buffer top-buffer row">
+                            <div style="cursor:pointer" class="col-xs-12 top-buffer">Select hour: <span
+                                    onclick="showMore(7,-15)">0</span> - <span onclick="showMore(7,-12)">3</span> -
+                                <span onclick="showMore(7,-9)">6</span> - <span onclick="showMore(7,-6)">9</span> -
+                                <span onclick="showMore(7,-3)">12</span> - <span onclick="showMore(7,0)">15</span> -
+                                <span onclick="showMore(7,3)">18</span> - <span onclick="showMore(7,6)">21</span></div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="400" height="325"
+                                    id="eurmslp-d7" src="" class="img-responsive"><label>Surface pressure and
+                                    precip</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="400" height="325"
+                                    id="mslp-d7" src="" class="img-responsive"><label>Air mass temperatures</label>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="350" height="400"
+                                    id="uk2mtmx-d7" src="" class="img-responsive"><label>Max temps</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="350" height="400"
+                                    id="ukwg-d7" src="" class="img-responsive"><label>Wind gusts</label></div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="350" height="363"
+                                    id="ukdp-d7" src="" class="img-responsive"><label>Dew point</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="350" height="363"
+                                    id="ukcp-d7" src="" class="img-responsive"><label>Storm risk</label></div>
+                            <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 top-buffer"><span
+                                    style="color:#007bff;cursor:pointer"
+                                    onclick="location.href ='https://www.theweatheroutlook.com/twodata/gfs.aspx'">GFS
+                                    chart viewer</span></div>
+                        </div>
+                    </span></div>
+            </td>
+        </tr>
+
+        <tr id="tr9">
+            <td>Tue 18
+                <span class="hidden-xs">Jul</span>
+                <a id="9" href="javascript:;">
+                    <div class="shows">Show details</div>
+                </a>
+            </td>
+            <td>
+                <img id="im4" src="../../Images/icons/cloudy.gif" alt="Weather"
+                    style="height:30px;width:45px;border-width:0px;" class="initial loading img-responsive"
+                    data-was-processed="true">
+            </td>
+            <td>
+                <span class="temps">
+                    18°C</span>
+            </td>
+            <td>
+                <img id="im5" src="../../Images/icons/west1.gif" alt="Wind direction"
+                    style="height:22px;width:22px;border-width:0px;" class="initial loading img-responsive"
+                    data-was-processed="true">
+                <span class="visible-xs xs-wind">4mph</span>
+            </td>
+            <td class="hidden-xs">
+                <span class="winds">
+                    4mph</span>
+            </td>
+            <td class="hidden-xs">
+                <span class="winds">
+                    4mph</span>
+            </td>
+            <td class="hidden-xs">
+                61%
+            </td>
+            <td class="hidden-xs">
+                1013mB
+            </td>
+            <td class="hidden-xs" id="rt9">
+                0.3 mm
+            </td>
+        </tr>
+        <tr style="display: none" id="trd9">
+            <td colspan="9"></td>
+        </tr>
+        <tr style="display: none;" id="trd29">
+            <td colspan="9" style="background-color: rgb(204, 204, 204);">
+                <div class="overflow-horiz-wrapper">
+                    Sun: <span>▲05:05</span><img class="img-responsive-inline-block img-responsive"
+                        style="width: 26px; height: 26px; vertical-align:middle;"
+                        src="https://www.theweatheroutlook.com/images/icons/clear.svg"><span>▼21:10
+                        &nbsp;&nbsp;&nbsp;Moon: <span>▲05:07</span><img
+                            class="img-responsive-inline-block img-responsive" alt="Moon waxing crescent"
+                            style="width: 26px; height: 26px; vertical-align:middle;"
+                            src="https://www.theweatheroutlook.com/images/icons/moon-waxing-crescent.svg"><span>▼22:10</span>
+                        <div id="gfs-ov-ch8" class="bottom-buffer top-buffer more-info-8"><span
+                                style="color:#007bff;cursor:pointer" onclick="javascript:showMore(8)">Show GFS
+                                charts</span></div>
+                        <div id="d-8" class="hidden bottom-buffer top-buffer row">
+                            <div style="cursor:pointer" class="col-xs-12 top-buffer">Select hour: <span
+                                    onclick="showMore(8,-15)">0</span> - <span onclick="showMore(8,-12)">3</span> -
+                                <span onclick="showMore(8,-9)">6</span> - <span onclick="showMore(8,-6)">9</span> -
+                                <span onclick="showMore(8,-3)">12</span> - <span onclick="showMore(8,0)">15</span> -
+                                <span onclick="showMore(8,3)">18</span> - <span onclick="showMore(8,6)">21</span></div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="400" height="325"
+                                    id="eurmslp-d8" src="" class="img-responsive"><label>Surface pressure and
+                                    precip</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="400" height="325"
+                                    id="mslp-d8" src="" class="img-responsive"><label>Air mass temperatures</label>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="350" height="400"
+                                    id="uk2mtmx-d8" src="" class="img-responsive"><label>Max temps</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="350" height="400"
+                                    id="ukwg-d8" src="" class="img-responsive"><label>Wind gusts</label></div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-6 col-sm-6 col-xs-12 top-buffer"><img width="350" height="363"
+                                    id="ukdp-d8" src="" class="img-responsive"><label>Dew point</label></div>
+                            <div class="col-lg-6 col-sm-6  col-xs-12 top-buffer"><img width="350" height="363"
+                                    id="ukcp-d8" src="" class="img-responsive"><label>Storm risk</label></div>
+                            <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 top-buffer"><span
+                                    style="color:#007bff;cursor:pointer"
+                                    onclick="location.href ='https://www.theweatheroutlook.com/twodata/gfs.aspx'">GFS
+                                    chart viewer</span></div>
+                        </div>
+                    </span></div>
+            </td>
+        </tr>
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4" class="text-left">
+                <button id="full-summary" type="button" class="btn btn-warning hidden-sm hidden-md hidden-lg">
+                    <i class="glyphicon glyphicon-resize-horizontal"></i></button>
+                <a id="hl_three_day" class="btn btn-success"
+                    href="//www.theweatheroutlook.com/twoforecasts/hourly-weather-forecast.aspx?loc=london">Hourly</a>
+                <span id="f16dp11"><a disabled="disabled" class="btn btn-warning">Day 0 - 7</a>&nbsp;<a
+                        class="btn btn-warning"
+                        href="javascript:__doPostBack('ctl00$cpBodyMain$lvMaster$f16dp11$ctl00$ctl01','')">8 -
+                        16</a>&nbsp;</span>
+            </td>
+            <td class="hidden-xs" id="units-wrapper" colspan="5">
+
+
+                <div id="units" class="smbuttonsul">
+                    <div role="toolbar" class="btn-toolbar">
+
+                        <div data-toggle="buttons" class="btn-group">
+
+                            <label class="btn btn-default active" id="wuts_wmph">
+                                mph
+                            </label>
+                            <label class="btn btn-default" id="wuts_wkph">
+                                kph
+                            </label>
+                            <label class="btn btn-default" id="wuts_wkts">
+                                kts
+                            </label>
+                            <label class="btn btn-default active" id="tuts_tc">
+                                °C
+                            </label>
+                            <label class="btn btn-default" id="tuts_tf">
+                                °F
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </td>
+        </tr>
+    </tfoot>
+</table>
