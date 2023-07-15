@@ -2,15 +2,27 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+from typing import List, Optional
+from pydantic import BaseModel
+
+
 
 # "https://www.theweatheroutlook.com/forecast/uk/london"
 BASE_URL = "https://www.theweatheroutlook.com/forecast/uk/"
 
 # need to to import pydantic and Optional
-# class CardData(BaseModel):  # pydantic model
-#     date: None
-#     month: None
-#     temperature: None
+class WeatherData(BaseModel):  # pydantic model
+    date: str=''
+    month: str=''
+    temperature: str=''
+    winds : str=''
+    humidity : str=''
+    rain : str=''
+
+
+class WeatherDataList(BaseModel):
+    td_list : List[WeatherData]=[]
+
     
 
 def get_resp(url):
@@ -28,11 +40,10 @@ def get_td_tags(row: BeautifulSoup, class_name="") -> list:
     return td_list
 
 
+# made pydantic class 
+def make_data_dict(row):
+    WeatherData_pydantic = WeatherData() 
 
-
-def make_dict(row):
-    d = {}
-    # for row_no in range(1,row_len,3):
     td_tags = get_td_tags(row)
     td_text = td_tags[0].text
     date = td_text[:6]
@@ -41,16 +52,39 @@ def make_dict(row):
     winds = td_tags[4].text.strip()
     humidity = td_tags[6].text.strip()
     rain = td_tags[8].text.strip()
-    # print(date,month,temperature)  6 , 8
 
-    d["date"] = date
-    d["month"] = month
-    d["temperature"] = temperature
-    d['winds'] = winds
-    d['humidity'] = humidity
-    d['rain'] = rain
+    WeatherData_pydantic.date =  date
+    WeatherData_pydantic.month =  month
+    WeatherData_pydantic.temperature =  temperature
+    WeatherData_pydantic.winds =  winds
+    WeatherData_pydantic.humidity =  humidity
+    WeatherData_pydantic.rain =  rain
 
-    return d
+    #return WeatherData_pydantic 
+    return WeatherData_pydantic
+
+# def make_data_dict(row):
+    
+#     d = {}
+#     # for row_no in range(1,row_len,3):
+#     td_tags = get_td_tags(row)
+#     td_text = td_tags[0].text
+#     date = td_text[:6]
+#     month = td_text[8:11]
+#     temperature = td_tags[2].text.strip()
+#     winds = td_tags[4].text.strip()
+#     humidity = td_tags[6].text.strip()
+#     rain = td_tags[8].text.strip()
+#     # print(date,month,temperature)  6 , 8
+
+#     d["date"] = date
+#     d["month"] = month
+#     d["temperature"] = temperature
+#     d['winds'] = winds
+#     d['humidity'] = humidity
+#     d['rain'] = rain
+
+#     return d
 
 
 def add_dict_to_list(url):
@@ -58,12 +92,24 @@ def add_dict_to_list(url):
     soup = BeautifulSoup(res.text, "html.parser")
     table = soup.find("table", class_="table table-condensed")
     rows = table.find_all("tr")
-    lweather_list = []
-    for row_no in range(1, 25, 3):
-        row = rows[row_no]
-        td_tags = make_dict(row)
-        lweather_list.append(td_tags)
-    return lweather_list
+    weather_pydantic_list = WeatherDataList()
+    for tr_tag in rows:
+        tag_id = tr_tag.get('id')
+        if (not tag_id) or 'trd' in tag_id :
+
+            continue
+
+
+        pydantic_td_tags = make_data_dict(tr_tag)
+        weather_pydantic_list.td_list.append(pydantic_td_tags)
+    return weather_pydantic_list.json()
+    
+
+    
+    # for row_no in range(1, 25, 3):
+    #     td_tags = make_dict(rows[row_no])
+    #     lweather_list.append(td_tags)
+    # return lweather_list
 
 def make_url(city):
     #city = input("enter city name :")
@@ -89,6 +135,11 @@ if __name__ == "__main__":
     # table = soup.find("table", class_="table table-condensed")
    
     print(get_weather_for_city_searched('dublin'))
+
+
+
+''' 'day':monday , 'temp':25, 'date':'12july2023','description':'abcxzsds', 
+'day':monday , 'temp':25, 'date':'12july2023','description':'abcxzsds', '''
 
 
 

@@ -22,3 +22,4 @@ def get_weather_news(request,city):
 
 
 
+
